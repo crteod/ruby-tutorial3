@@ -7,9 +7,6 @@
 default: &default
   adapter: postgresql
   template: template0
-  username: postgres
-  password: '36774335e4b24bcd20e36b100cf8d3a84cc93114e8ddc5ee314abb527518b58a'
-  host: localhost
   pool: 5
   timeout: 5000
 
@@ -27,3 +24,5 @@ test:
 production:
   <<: *default
   database: prod1
+  username:
+  password:
